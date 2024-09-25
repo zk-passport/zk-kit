@@ -18,7 +18,7 @@ export default class IMT {
      * the level of the tree, while the second index represents the node's
      * position within that specific level.
      */
-    private readonly _nodes: IMTNode[][]
+    private _nodes: IMTNode[][]
     /**
      * A list of zero values calculated during the initialization of the tree.
      * The list contains one value for each level of the tree, and the value for
@@ -327,5 +327,19 @@ export default class IMT {
         }
 
         return proof.root === node
+    }
+    /**
+     * The whole tree.
+     * @returns The whole tree.
+     */
+    public get nodes(): IMTNode[][] {
+        return this._nodes
+    }
+    /**
+     * Set the whole tree.
+     * @param nodes The new tree.
+     */
+    public setNodes(nodes: IMTNode[][]) {
+        this._nodes = nodes
     }
 }
