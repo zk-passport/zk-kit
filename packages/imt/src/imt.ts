@@ -132,7 +132,7 @@ export default class IMT {
     public get leaves(): IMTNode[] {
         return this._nodes[0].slice()
     }
-
+    
     /**
      * The list of zero values calculated during the initialization of the tree.
      * @returns The list of pre-computed zeroes.

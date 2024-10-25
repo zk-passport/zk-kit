@@ -1,5 +1,6 @@
 {
-    "name": "zk-kit",
+    "name": "@openpassport/zk-kit",
+    "version": "0.1.8",
     "description": "A monorepo of reusable JS libraries for zero-knowledge technologies.",
     "license": "MIT",
     "repository": "git@github.com:privacy-scaling-explorations/zk-kit.git",
@@ -26,7 +27,8 @@
         "remove:stable-version-field": "ts-node scripts/remove-stable-version-field.ts ${0} && yarn format:prettier:write",
         "precommit": "lint-staged",
         "postinstall": "husky && git config --local core.editor cat",
-        "style": "turbo lint:eslint format:prettier"
+        "style": "turbo lint:eslint format:prettier",
+        "publish": "npm publish --access public"
     },
     "keywords": [
         "javascript",
