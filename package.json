@@ -1,6 +1,6 @@
 {
     "name": "@openpassport/zk-kit",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "A monorepo of reusable JS libraries for zero-knowledge technologies.",
     "license": "MIT",
     "repository": "git@github.com:privacy-scaling-explorations/zk-kit.git",
