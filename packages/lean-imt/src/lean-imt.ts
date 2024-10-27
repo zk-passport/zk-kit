@@ -4,7 +4,7 @@ import {
     requireDefined,
     requireNumber,
     requireString
-} from "@zk-kit/utils/error-handlers"
+} from "@openpassport/zk-kit-utils/error-handlers"
 import { LeanIMTHashFunction, LeanIMTMerkleProof } from "./types"
 
 /**

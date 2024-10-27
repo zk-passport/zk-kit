@@ -25,8 +25,7 @@
         "remove:stable-version-field": "ts-node scripts/remove-stable-version-field.ts ${0} && yarn format:prettier:write",
         "precommit": "lint-staged",
         "postinstall": "husky && git config --local core.editor cat",
-        "style": "turbo lint:eslint format:prettier",
-        "publish": "npm publish --access public"
+        "style": "turbo lint:eslint format:prettier"
     },
     "keywords": [
         "javascript",
