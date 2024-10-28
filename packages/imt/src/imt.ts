@@ -1,10 +1,4 @@
-import {
-    requireArray,
-    requireFunction,
-    requireNumber,
-    requireObject,
-    requireTypes
-} from "@openpassport/zk-kit-utils/error-handlers"
+import { requireArray, requireFunction, requireNumber, requireObject, requireTypes } from "@openpassport/zk-kit-utils"
 import { IMTHashFunction, IMTMerkleProof, IMTNode } from "./types"
 
 /**

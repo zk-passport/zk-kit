@@ -1,10 +1,4 @@
-import {
-    requireArray,
-    requireFunction,
-    requireDefined,
-    requireNumber,
-    requireString
-} from "@openpassport/zk-kit-utils/error-handlers"
+import { requireArray, requireFunction, requireDefined, requireNumber, requireString } from "@openpassport/zk-kit-utils"
 import { LeanIMTHashFunction, LeanIMTMerkleProof } from "./types"
 
 /**

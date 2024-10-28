@@ -7,7 +7,7 @@
     "homepage": "https://www.openpassport.app/",
     "scripts": {
         "_build": "yarn workspaces foreach -A -t --no-private run build",
-        "build": "turbo _build",
+        "turboBuild": "turbo _build",
         "_test": "jest --coverage",
         "test": "turbo _test",
         "test:library": "jest --coverage packages/${0}",

@@ -1,6 +1,6 @@
 {
     "name": "@openpassport/zk-kit-imt",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "description": "Incremental Merkle tree implementation in TypeScript.",
     "type": "module",
     "license": "MIT",
