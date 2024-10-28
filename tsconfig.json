@@ -12,7 +12,10 @@
         "allowSyntheticDefaultImports": true,
         "typeRoots": ["node_modules/@types", "types"],
         "paths": {
-            "@zk-kit/*": ["packages/*/src"]
+            "@zk-kit/*": ["packages/*/src"],
+            "@openpassport/zk-kit-utils/*": ["packages/zk-kit-utils/src"],
+            "@openpassport/zk-kit-lean-imt/*": ["packages/zk-kit-lean-imt/src"],
+            "@openpassport/zk-kit-imt/*": ["packages/zk-kit-imt/src"]
         }
     },
     "ts-node": {
