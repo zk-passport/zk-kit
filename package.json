@@ -6,8 +6,8 @@
     "repository": "git@github.com:zk-passport/zk-kit.git",
     "homepage": "https://www.openpassport.app/",
     "scripts": {
-        "_build": "yarn workspaces foreach -A -t --no-private run build",
-        "turboBuild": "turbo _build",
+        "yarnBuild": "yarn workspaces foreach -A -t --no-private run build",
+        "build": "turbo _build",
         "_test": "jest --coverage",
         "test": "turbo _test",
         "test:library": "jest --coverage packages/${0}",
