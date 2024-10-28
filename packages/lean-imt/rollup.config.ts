@@ -25,7 +25,7 @@ export default [
             { file: pkg.exports["."].require, format: "cjs", banner },
             { file: pkg.exports["."].default, format: "es", banner }
         ],
-        external: [...Object.keys(pkg.dependencies), "@zk-kit/utils/error-handlers"],
+        external: [...Object.keys(pkg.dependencies), "@openpassport/zk-kit-utils/error-handlers"],
         plugins: [typescript({ tsconfig: "./build.tsconfig.json" }), cleanup({ comments: "jsdoc" })]
     },
     {

@@ -6,8 +6,8 @@
     "repository": "git@github.com:zk-passport/zk-kit.git",
     "homepage": "https://www.openpassport.app/",
     "scripts": {
-        "_build": "yarn workspaces foreach -A -t --no-private run build",
-        "build": "turbo _build",
+        "_yarnBuild": "yarn workspaces foreach -A -t --no-private run build",
+        "build": "turbo _build && yarn workspaces foreach -A -t --no-private run build",
         "_test": "jest --coverage",
         "test": "turbo _test",
         "test:library": "jest --coverage packages/${0}",
@@ -25,8 +25,7 @@
         "remove:stable-version-field": "ts-node scripts/remove-stable-version-field.ts ${0} && yarn format:prettier:write",
         "precommit": "lint-staged",
         "postinstall": "husky && git config --local core.editor cat",
-        "style": "turbo lint:eslint format:prettier",
-        "publish": "npm publish --access public"
+        "style": "turbo lint:eslint format:prettier"
     },
     "keywords": [
         "javascript",
